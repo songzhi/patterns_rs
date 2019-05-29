@@ -3,3 +3,4 @@ pub mod factory_method;
 pub mod singleton;
 pub mod facade;
 pub mod adaptor;
+pub mod builder;
