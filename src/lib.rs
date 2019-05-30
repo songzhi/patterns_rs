@@ -5,3 +5,4 @@ pub mod facade;
 pub mod adaptor;
 pub mod builder;
 pub mod abstract_factory;
+pub mod prototype;
