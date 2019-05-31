@@ -11,3 +11,4 @@ pub mod proxy;
 pub mod observer;
 pub mod command;
 pub mod iterator;
+pub mod composite;
