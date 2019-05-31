@@ -10,3 +10,4 @@ pub mod mediator;
 pub mod proxy;
 pub mod observer;
 pub mod command;
+pub mod iterator;
