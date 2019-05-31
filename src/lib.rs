@@ -7,3 +7,4 @@ pub mod builder;
 pub mod abstract_factory;
 pub mod prototype;
 pub mod mediator;
+pub mod proxy;
