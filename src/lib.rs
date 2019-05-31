@@ -1,10 +1,11 @@
 pub mod simple_factory;
-pub mod factory_method;
-pub mod singleton;
 pub mod facade;
 pub mod adaptor;
-pub mod builder;
+pub mod singleton;
+pub mod factory_method;
 pub mod abstract_factory;
+pub mod builder;
 pub mod prototype;
 pub mod mediator;
 pub mod proxy;
+pub mod observer;
