@@ -12,3 +12,4 @@ pub mod observer;
 pub mod command;
 pub mod iterator;
 pub mod composite;
+pub mod template_method;
