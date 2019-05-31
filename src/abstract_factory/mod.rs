@@ -1,3 +1,6 @@
+//! # 抽象工厂模式
+//!
+
 pub mod xml;
 pub mod rdb;
 

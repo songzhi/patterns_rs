@@ -1,3 +1,6 @@
+//! # 简单工厂模式
+//!
+
 pub trait API {
     fn say(&self, name: &str) -> String;
 }

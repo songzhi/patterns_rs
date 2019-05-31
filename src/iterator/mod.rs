@@ -1,3 +1,4 @@
+//! # 迭代器模式
 #[derive(Default)]
 pub struct Numbers {
     start: isize,

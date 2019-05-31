@@ -1,3 +1,5 @@
+//! # 适应器模式
+
 pub trait Target {
     fn request(&self) -> String;
 }

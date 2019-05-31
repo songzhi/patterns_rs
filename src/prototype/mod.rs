@@ -1,3 +1,6 @@
+//! # 原型模式
+//!
+
 pub fn prototype() {
     let prototype = Object::new();
 

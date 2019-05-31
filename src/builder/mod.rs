@@ -1,3 +1,5 @@
+//! # 创建者模式
+
 #[derive(Default)]
 pub struct Foo {
     result: String

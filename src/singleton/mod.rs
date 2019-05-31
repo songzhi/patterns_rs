@@ -1,3 +1,5 @@
+//! # 单例模式
+
 use std::sync::Once;
 
 pub struct Singleton {}

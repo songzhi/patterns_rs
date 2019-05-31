@@ -13,3 +13,4 @@ pub mod command;
 pub mod iterator;
 pub mod composite;
 pub mod template_method;
+pub mod strategy;
