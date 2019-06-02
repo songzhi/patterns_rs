@@ -8,3 +8,4 @@ edition = "2018"
 
 [dependencies]
 downcast-rs = "1.0.4"
+rand = "0.6.5"
