@@ -15,3 +15,7 @@ pub mod composite;
 pub mod template_method;
 pub mod strategy;
 pub mod state;
+pub mod memento;
+
+#[macro_use]
+extern crate downcast_rs;
