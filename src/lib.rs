@@ -21,6 +21,7 @@ pub mod interpreter;
 pub mod decorator;
 pub mod chain;
 pub mod bridge;
+pub mod visitor;
 
 #[macro_use]
 extern crate downcast_rs;
