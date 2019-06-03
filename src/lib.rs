@@ -19,6 +19,7 @@ pub mod memento;
 pub mod flyweight;
 pub mod interpreter;
 pub mod decorator;
+pub mod chain;
 
 #[macro_use]
 extern crate downcast_rs;
