@@ -1,17 +1,11 @@
 //! # 单例模式
 
-use std::sync::Once;
+use once_cell::sync::OnceCell;
 
 pub struct Singleton {}
 
-static mut SINGLETON: Option<Singleton> = None;
-static INIT: Once = Once::new();
+static SINGLETON: OnceCell<Singleton> = OnceCell::new();
 
 pub fn get_instance() -> &'static Singleton {
-    unsafe {
-        INIT.call_once(|| {
-            SINGLETON = Some(Singleton {})
-        });
-        SINGLETON.as_ref().unwrap()
-    }
+    SINGLETON.get_or_init(|| Singleton {})
 }

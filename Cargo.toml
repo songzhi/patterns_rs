@@ -9,3 +9,4 @@ edition = "2018"
 [dependencies]
 downcast-rs = "1.0.4"
 rand = "0.6.5"
+once_cell = "0.2.1"
