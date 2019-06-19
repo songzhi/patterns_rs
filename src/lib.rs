@@ -22,6 +22,7 @@ pub mod decorator;
 pub mod chain;
 pub mod bridge;
 pub mod visitor;
+pub mod typestate;
 
 #[macro_use]
 extern crate downcast_rs;
