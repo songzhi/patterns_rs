@@ -1,5 +1,5 @@
 pub trait State {
-    fn is_final(&self) -> bool;
+    fn is_final() -> bool;
 }
 
 state!(Monday);

@@ -3,7 +3,7 @@ macro_rules! state {
         #[derive(Debug)]
         pub struct $name;
         impl State for $name {
-            fn is_final(&self) -> bool {
+            fn is_final() -> bool {
                 false
             }
         }
@@ -13,8 +13,11 @@ macro_rules! state {
 macro_rules! edge {
     ($from:ty, $to:ident) => {
         impl From<StateMachine<$from>> for StateMachine<$to> {
-            fn from(_st: StateMachine<$from>) -> Self {
-                StateMachine { state: $to }
+            fn from(st: StateMachine<$from>) -> Self {
+                unsafe {
+                    // 这里是安全的,因为我们用了零字节大小的PhantomData<S>
+                    std::mem::transmute::<StateMachine<$from>,StateMachine<$to>>(st)
+                }
             }
         }
     };
