@@ -96,7 +96,7 @@ mod tests {
 
     #[test]
     fn test() {
-        let mut parser = Parser::new("1 + 2 + 3 - 4 + 5 - 6");
+        let parser = Parser::new("1 + 2 + 3 - 4 + 5 - 6");
         assert_eq!(parser.parse().unwrap().interpret(), 1);
     }
 }
